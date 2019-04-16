@@ -41,11 +41,11 @@ public class BillCalc extends Application {
         gp.setVgap(20);
 
         TextField textP = new TextField();
-        textP.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue, String newValue) -> {
-            if(!newValue.matches("[0-9]*")){
-                textP.setText(oldValue);
-            }
-        });
+//        textP.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue, String newValue) -> {
+//            if(!newValue.matches("[0-9]*")){
+//                textP.setText(oldValue);
+//            }
+//        });
         
         gp.add(textP, 1, 0);
         gp.setHgap(20);
@@ -54,22 +54,22 @@ public class BillCalc extends Application {
         gp.add(discount, 0, 1);
 
         TextField textD = new TextField();
-        textD.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue, String newValue) -> {
-            if(!newValue.matches("[0-9]*")){
-                textD.setText(oldValue);
-            }
-        });
+//        textD.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue, String newValue) -> {
+//            if(!newValue.matches("[0-9]*")){
+//                textD.setText(oldValue);
+//            }
+//        });
         gp.add(textD, 1, 1);
 
         Label tip = new Label("Tip %:");
         gp.add(tip, 0, 2);
 
         TextField textT = new TextField();
-        textT.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue, String newValue) -> {
-            if(!newValue.matches("[0-9]*")){
-                textT.setText(oldValue);
-            }
-        });
+//        textT.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue, String newValue) -> {
+//            if(!newValue.matches("[0-9]*")){
+//                textT.setText(oldValue);
+//            }
+//        });
         gp.add(textT, 1, 2);
 
         Label totalBill = new Label("Total Bill:");
