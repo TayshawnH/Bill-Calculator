@@ -1,1 +1,1 @@
-# Bill-Calculator
+# Bill Calculator
